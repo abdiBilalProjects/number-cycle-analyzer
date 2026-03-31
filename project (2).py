@@ -2,10 +2,6 @@ from PyQt5.uic import loadUi
 from PyQt5.QtWidgets import *
 from pickle import load,dump
 
-
-
-
-
 def play():
     n=w.n.text()
     if not(n.isdecimal() and(int(n)>0)):
