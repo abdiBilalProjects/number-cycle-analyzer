@@ -24,6 +24,7 @@ def strecture(n,f1):
     f1=open(f1,"ab")
     e={"cycle":"","binary":"","hexadecimal":"","period":0}
     test=True
+    z=n
     ch=""
     ch1=""
     ch2=""
@@ -37,7 +38,7 @@ def strecture(n,f1):
         x+=2
         y=hexadecimal(n,16)
         ch1+=y+"#"
-        if str(x) in ch:
+        if x==z:
             test=False
             ch+=str(x)+"#"
             n=x
